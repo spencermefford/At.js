@@ -113,7 +113,7 @@ class App
       when KEY_CODE.ESC
         e.preventDefault()
         this.controller()?.view.hide()
-      when KEY_CODE.DOWN, KEY_CODE.UP, KEY_CODE.CTRL, KEY_CODE.ENTER
+      when KEY_CODE.DOWN, KEY_CODE.UP, KEY_CODE.CTRL, KEY_CODE.ENTER, KEY_CODE.SHIFT, KEY_CODE.ALT, KEY_CODE.COMMAND
         $.noop()
       when KEY_CODE.P, KEY_CODE.N
         this.dispatch e if not e.ctrlKey

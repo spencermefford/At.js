@@ -36,7 +36,10 @@ KEY_CODE = {
   RIGHT: 39,
   DOWN: 40,
   BACKSPACE: 8,
-  SPACE: 32
+  SPACE: 32,
+  SHIFT: 16,
+  ALT: 18,
+  COMMAND: 91
 };
 
 DEFAULT_CALLBACKS = {
@@ -297,6 +300,9 @@ App = (function() {
       case KEY_CODE.UP:
       case KEY_CODE.CTRL:
       case KEY_CODE.ENTER:
+      case KEY_CODE.SHIFT:
+      case KEY_CODE.ALT:
+      case KEY_CODE.COMMAND:
         $.noop();
         break;
       case KEY_CODE.P:

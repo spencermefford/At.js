@@ -8,3 +8,4 @@ components
 .grunt
 *.log
 build/
+.idea
